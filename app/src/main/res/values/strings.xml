@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">D&amp;D 5e Inventory</string>
+
+    <!-- Toolbar -->
     <string name="search">Search</string>
     <string-array name="planets_array">
         <item>Mercury</item>
@@ -11,10 +13,20 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+
+    <!-- Coins -->
     <string name="pp">pp:</string>
     <string name="gp">gp:</string>
     <string name="ep">ep:</string>
     <string name="sp">sp:</string>
     <string name="cp">cp:</string>
+
+    <!-- Inventory -->
     <string name="in_gold">In gold</string>
+    <string name="encumbrance">Encumbrance</string>
+
+    <!-- Weight -->
+    <string name="carrying">Carrying:</string>
+    <string name="capacity">Capacity:</string>
+    <string name="lb">%1$d lb</string>
 </resources>

@@ -27,27 +27,50 @@
     </android.support.v7.widget.Toolbar>
 
     <fragment
-        android:id="@+id/fragment"
-        android:name="dk.venus626.dnd5einventory.PurseFragment"
+        android:id="@+id/container_purse"
+        android:name="dk.venus626.dnd5einventory.CoinsFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/switch_gold"
         app:layout_constraintEnd_toStartOf="@+id/switch_gold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        tools:layout="@layout/fragment_purse" />
+        app:layout_constraintTop_toTopOf="@id/switch_gold"
+        tools:layout="@layout/fragment_coins" />
 
     <Switch
         android:id="@+id/switch_gold"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginEnd="8dp"
+        android:enabled="false"
         android:switchPadding="8dp"
         android:text="@string/in_gold"
-        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <fragment
+        android:id="@+id/container_scale"
+        android:name="dk.venus626.dnd5einventory.WeightFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_encumbrance"
+        app:layout_constraintTop_toTopOf="@id/switch_encumbrance"
+        app:layout_constraintBottom_toBottomOf="@id/switch_encumbrance"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_weight" />
+
+    <Switch
+        android:id="@+id/switch_encumbrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:switchPadding="8dp"
+        android:text="@string/encumbrance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_gold" />
 </android.support.constraint.ConstraintLayout>
