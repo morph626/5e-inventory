@@ -11,4 +11,10 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+    <string name="pp">pp:</string>
+    <string name="gp">gp:</string>
+    <string name="ep">ep:</string>
+    <string name="sp">sp:</string>
+    <string name="cp">cp:</string>
+    <string name="in_gold">In gold</string>
 </resources>
